@@ -25,7 +25,7 @@ app.use("/upload",candidateRoute);
 mongoose
   .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
+    useUnifiedTopology:true
   })
   .then(() => {
     app.listen(port, () => {
